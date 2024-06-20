@@ -25,19 +25,19 @@ const Login = () => {
                         console.log('errors', isValid)
                        
                         return <Form className="d-flex flex-column gap-4">
-                            <div className="mt-2 d-flex flex-row justify-content-between">
+                            <div className="mt-2 d-flex flex-row justify-content-between gap-3">
                                
                                 <label>Username: </label>
                                 <Field className='input input-solid-secondary' type='text' name='username' placeholder='Ваше імя' />
                                 <ErrorMessage className="text-danger" name="username" component='div'/>
                             </div>
-                            <div className="mt-2 d-flex flex-row justify-content-between">
+                            <div className="mt-2 d-flex flex-row justify-content-between  gap-3">
                                
                                 <label>Email: </label>
                                 <Field className='input input-solid-secondary' type='email' name='email' placeholder='Имейл' />
                                 <ErrorMessage className="text-danger" name="email" component='div'/>
                             </div>
-                            <div className="mt-2 d-flex flex-row justify-content-between">
+                            <div className="mt-2 d-flex flex-row justify-content-between  gap-3">
                                
                                <label>Telephone: </label>
                                <Field className='input input-solid-secondary' type='telephone' name='telephone' placeholder='Ваш телефон' />
