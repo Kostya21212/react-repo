@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
-    <table className='content table table-success table-striped ' style={{ width: '50%', height: '35%' }}>
+    <table className='content table table-success table-striped ' style={{ width: '600px', height: '35%' }}>
       <thead>
         <tr className='tr'>
           <th>Ім'я</th>

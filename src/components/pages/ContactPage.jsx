@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Contacts from '../pages/Contacts';
-import ContactForm from '../pages/ContactForm';
+import Contacts from './Contacts';
+import ContactForm from './ContactForm';
 
 const ContactsPage = () => {
   const [contactList, setContactList] = useState([]);
@@ -38,11 +38,14 @@ const ContactsPage = () => {
   };
 
   return (
-    <div className="ContactsPage">
-      <h2>Список контактів</h2>
-      <Contacts contacts={contactList} onDeleteContact={deleteContact} />
-      <button onClick={toggleForm}>{showForm ? 'Скасувати' : 'Додати контакт'}</button>
+    <div className=" container ContactsPage d-flex align-items-center ">
+      <div className='d-flex flex-column'>
+         <button onClick={toggleForm}>{showForm ? 'Скасувати' : 'Додати контакт'}</button>
       {showForm && <ContactForm onAddContact={addContact} />}
+      </div>
+     
+      <Contacts contacts={contactList} onDeleteContact={deleteContact} />
+      
     </div>
   );
 };

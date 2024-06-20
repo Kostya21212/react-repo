@@ -27,11 +27,11 @@ const ContactForm = ({ onAddContact }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='form-control form-control-lg d-flex flex-column gap-2 p-3 bg-warning' style={{width: '30%',margin:'0 auto'}}>
+    <form onSubmit={handleSubmit} className='form-control form-control-lg d-flex flex-column gap-2 p-3 bg-warning' style={{width: '500px',margin:'0 auto'}}>
       <input type="text" placeholder="Ім'я" value={name} onChange={(e) => setName(e.target.value)} style={{width:'50%'}} />
       <input type="text" placeholder="Прізвище" value={username} onChange={(e) => setUsername(e.target.value)} />
       <input type="text" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)} />
-      <button type="submit" style={{maxWidth: '250pxm',margin:'0 auto'}}>Зберегти</button>
+      <button type="submit" style={{height:'50px'}}>Зберегти</button>
     </form>
   );
 };
