@@ -77,7 +77,7 @@ const Todo_List = () => {
                 />
                 <button onClick={addTodo} style={{height:'50px'}}>Додати</button>
             </div>
-            {/* Виведення списку тудушок */}
+          
             <ul style={{padding: 0}}>
                 {todos.map(todo => (
                     <li key={todo.id} className='d-flex flex-row justify-content-between p-2'>
@@ -115,7 +115,7 @@ const Todo_List = () => {
                 ))}
             </ul>
 
-            {/* Форма для додавання нової тудушки */}
+         
             
         </div>
     );
