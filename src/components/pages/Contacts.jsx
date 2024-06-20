@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
-    <table className='content table table-success table-striped ' style={{ width: '600px', height: '35%' }}>
+    <table className='content table table-success table-striped mb-3 table-container table' style={{ width: '600px', height: '35%' }}>
       <thead>
         <tr className='tr'>
           <th>Ім'я</th>
@@ -14,11 +14,11 @@ const Contacts = ({ contacts, onDeleteContact }) => {
       <tbody>
         {contacts.map(contact => (
           <tr key={contact.id}>
-            <td>{contact.name}</td>
-            <td>{contact.username}</td>
-            <td>{contact.phone}</td>
+            <td style={{fontSize:'12px'}}>{contact.name}</td>
+            <td style={{fontSize:'12px'}}>{contact.username}</td>
+            <td style={{fontSize:'12px'}}>{contact.phone}</td>
             <td>
-              <button onClick={() => onDeleteContact(contact.id)}>Видалити</button>
+              <button onClick={() => onDeleteContact(contact.id)} style={{fontSize:'15px'}}>Видалити</button>
             </td>
           </tr>
         ))}

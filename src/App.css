@@ -9,13 +9,25 @@
   border:2px solid black
 }
 th{
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-bottom: 15px;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
 }
+.table-container {
+  overflow-x: auto; /* Включить горизонтальную прокрутку, если содержимое не помещается */
+}
+
+.table {
+  white-space: nowrap; /* Запретить перенос строк, чтобы содержимое не переносилось автоматически */
+}
+
+.table th, .table td {
+  white-space: normal; /* Разрешить перенос текста внутри ячеек таблицы */
+}
+
 .tr{
   margin-bottom: 15px;
 }
@@ -31,6 +43,7 @@ th{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 130vh;
 }
 .logo {
   height: 6em;
