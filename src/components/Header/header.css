@@ -1,0 +1,8 @@
+#d-flex {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex !important;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}

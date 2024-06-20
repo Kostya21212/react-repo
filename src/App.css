@@ -2,6 +2,30 @@
 
   text-align: center;
 }
+.content{
+  background-color:red;
+
+  margin:0 auto;
+  border:2px solid black
+}
+th{
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+.tr{
+  margin-bottom: 15px;
+}
+.container_block{
+  background-color: red;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 200px;
+  list-style-type: none;
+}
 .bg {
   background-image: url('./images/dreamy-aesthetic-color-year-tones-nature-landscape.jpg');
   background-position: center;
