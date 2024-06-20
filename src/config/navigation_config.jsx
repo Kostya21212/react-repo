@@ -8,6 +8,7 @@ import Registration from '../components/pages/Registration';
 import Todo_list from '../components/pages/Todo-list';
 import NotFound from "../components/pages/NotFound";
 import Login from '../components/pages/Login';
+import ListUsers from '../components/pages/ListUsers';
 export const NAV_PATHS = {
     HOME: "/",
     GOODS: "/goods",
@@ -15,7 +16,8 @@ export const NAV_PATHS = {
     CONTACT: "/contact",
     SMILES: "/smiles",
     REGISTRATION: "/registration",
-    LOGIN:"/login"
+    LOGIN:"/login",
+    LISTUSERS:"/listUsers"
   };
   
   export const NAV_ITEMS = [
@@ -44,11 +46,18 @@ export const NAV_PATHS = {
         title: "Contact",
         element: <Contact/>,
       },
+  
+    {
+      path: NAV_PATHS.LISTUSERS,
+      title: 'Users list',
+      element: <ListUsers/>,
+    },  
     {
       path: NAV_PATHS.REGISTRATION,
-      title: "Registration",
+      title: <i class="bi bi-box-arrow-right"></i>,
       element: <Registration/>,
-    },{
+    },
+    {
       path: NAV_PATHS.LOGIN,
       title: <i class="bi bi-person-circle"></i>,
       element: <Login/>,
