@@ -18,16 +18,16 @@ const Home = () => {
                 </div>
                 <div className="carousel-inner" >
                     <div className="carousel-item active">
-                        <img src={beautifulKittenWithFlowers} className="d-block w-100" alt="Slide 1" />
+                        <img src={beautifulKittenWithFlowers} className="d-block w-100 h-100" alt="Slide 1" style={{minHeight:'482px'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteDomesticKittenSitsWindow} className="d-block w-100" alt="Slide 2" />
+                        <img src={cuteDomesticKittenSitsWindow} className="d-block w-100 h-100" alt="Slide 2" style={{minHeight:'482px'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteKittenSittingOutdoorsToy} className="d-block w-100" alt="Slide 3" />
+                        <img src={cuteKittenSittingOutdoorsToy} className="d-block w-100 h-100" alt="Slide 3" style={{minHeight:'482px'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteKittenSittingOutdoorsSnow} className="d-block w-100" alt="Slide 4" />
+                        <img src={cuteKittenSittingOutdoorsSnow} className="d-block w-100 h-100" alt="Slide 4" style={{minHeight:'482px'}} />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

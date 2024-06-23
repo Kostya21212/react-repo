@@ -34,7 +34,7 @@ const EmojiVoting = () => {
     };
 
     return (
-        <div className='container-fluid bg-primary d-flex flex-column p-5 border border-success-subtle rounded-4' style={{ width: '500px' }}>
+        <div className='container-fluid bg-warning d-flex flex-column p-5 border border-success-subtle rounded-4' style={{ width: '500px' }}>
             <h1>Emoji Voting</h1>
             <ul className='d-flex flex-row'>
                 {emojis.map((emojiData, index) => (

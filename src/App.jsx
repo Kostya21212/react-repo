@@ -3,7 +3,6 @@
 import HeaderFunction from './components/Header/Header';
 import LeftSideNavigation from './components/LeftSide/LeftSideNavigation';
 import Footer from './components/footer/Footer';
-
 import './App';
 import './index.css';
 

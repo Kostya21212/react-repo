@@ -3,7 +3,7 @@ import birdColorfulGradientDesignVector from '../../images/bird-colorful-gradien
 
 function Footer() {
     return (
-        <div className='bg-black text-white d-flex justify-content-around' style={{ height: '100px', zIndex: '4', position: 'fixed', bottom: '0', width: '100%', marginTop:'550px' }}>
+        <div className='bg-black text-white d-flex justify-content-around' style={{ height: '100px', zIndex: '4', bottom: '0', width: '100%', left: 0,position:'fixed' }}>
             <div className='d-flex align-items-center'>
                 <a href="https://www.viber.com"> <i className="bi bi-whatsapp fs-4"></i></a>
                 <a href="https://www.instagram.com" className='ms-3'> <i className="bi bi-instagram fs-4"></i></a>

@@ -2,28 +2,35 @@ import React from 'react';
 
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
-    <table className='content table table-success table-striped mb-3 table-container table' style={{ width: '600px', height: '35%' }}>
-      <thead>
-        <tr className='tr'>
-          <th>Ім'я</th>
-          <th>Прізвище</th>
-          <th>Телефон</th>
-          <th>Дії</th>
-        </tr>
-      </thead>
-      <tbody>
-        {contacts.map(contact => (
-          <tr key={contact.id}>
-            <td style={{fontSize:'12px'}}>{contact.name}</td>
-            <td style={{fontSize:'12px'}}>{contact.username}</td>
-            <td style={{fontSize:'12px'}}>{contact.phone}</td>
-            <td>
-              <button onClick={() => onDeleteContact(contact.id)} style={{fontSize:'15px'}}>Видалити</button>
-            </td>
+    <div className='overflow-x-auto'>
+      <table className='min-w-full bg-warning rounded-1 border border-gray-300'>
+        <thead className='bg-gray-800 text-Black text-lg'>
+          <tr>
+            <th className='px-4 py-2'>Ім'я</th>
+            <th className='px-4 py-2'>Прізвище</th>
+            <th className='px-4 py-2'>Телефон</th>
+            <th className='px-4 py-2'>Дії</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {contacts.map(contact => (
+            <tr key={contact.id} className=' border-gray-300'>
+              <td className='px-4 py-2 text-sm'>{contact.name}</td>
+              <td className='px-4 py-2 text-sm'>{contact.username}</td>
+              <td className='px-4 py-2 text-sm'>{contact.phone}</td>
+              <td className='px-4 py-2'>
+                <button 
+                  onClick={() => onDeleteContact(contact.id)} 
+                  className='text-sm bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded'
+                >
+                  Видалити
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

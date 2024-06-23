@@ -65,14 +65,16 @@ const Todo_List = () => {
     };
 
     return (
-        <div className="todo-list bg-primary d-flex flex-column justify-content-around p-3" style={{width:'700px', margin:'0 auto', borderRadius:'25px'}}>
+        <div className="todo-list bg-warning d-flex flex-column justify-content-around p-3" style={{width:'700px', margin:'0 auto', borderRadius:'25px'}}>
           <div className="add-todo d-flex justify-content-between">
                 <input
                     type="text"
                     value={newTodo}
                     onChange={(e) => setNewTodo(e.target.value)}
                     placeholder="Введіть нову тудушку"
-                    style={{height:'50px',marginBottom:'25px',width:'1000px'}}
+                    style={{height:'50px',marginBottom:'25px',width:'1000px',marginRight: '20px',
+                    textAlign: 'center',
+                    borderRadius: '20px'}}
                 
                 />
                 <button onClick={addTodo} style={{height:'50px'}}>Додати</button>
@@ -104,9 +106,9 @@ const Todo_List = () => {
                                 >
                                     {todo.text}
                                 </span>
-                                <div>
-                                  <button onClick={() => editTodo(todo.id)}><i class="bi bi-pencil-square"></i></button>
-                                <button onClick={() => removeTodo(todo.id)}><i class="bi bi-x-circle"></i></button>  
+                                <div className='d-flex  gap-2'>
+                                  <button  onClick={() => editTodo(todo.id)}><i class="bi bi-pencil-square"></i></button>
+                                <button  onClick={() => removeTodo(todo.id)}><i class="bi bi-x-circle"></i></button>  
                                 </div>
                                 
                             </>
