@@ -7,7 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import { NAV_ITEMS } from '../../config/navigation_config'; 
 function HeaderFunction() {
     return (
-        <div сдфі>
+        <div >
             <div className="text-center  text-primary-emphasis bg-transparent position-relative z-index-1  rounded-3 flex column-gap-3 p-0" style={{padding:'0'}}>
                 <Navigation />
                 <Routes>

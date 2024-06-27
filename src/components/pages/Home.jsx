@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../../App';
 import beautifulKittenWithFlowers from '../../images/beautiful-kitten-with-flowers-outdoors.jpg';
 import cuteDomesticKittenSitsWindow from '../../images/cute-domestic-kitten-sits-window-staring-outside-generative-ai.jpg';
@@ -5,10 +6,12 @@ import cuteKittenSittingOutdoorsSnow from '../../images/cute-kitten-sitting-outd
 import cuteKittenSittingOutdoorsToy from '../../images/cute-kitten-sitting-outdoors-playful-staring-toy-generated-by-artificial-intelligence.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 const Home = () => { 
-    console.log('Home')
+   
     return ( 
         <div className="container" style={{ width: '870px', height: '870px' }}>
+           
             <div id="carouselExampleIndicators" className="carousel slide mt-5" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,16 +21,16 @@ const Home = () => {
                 </div>
                 <div className="carousel-inner" >
                     <div className="carousel-item active">
-                        <img src={beautifulKittenWithFlowers} className="d-block w-100 h-100" alt="Slide 1" style={{minHeight:'482px'}} />
+                        <img src={beautifulKittenWithFlowers} className="d-block w-100 h-100" alt="Slide 1" style={{minHeight:'482px',objectFit: 'cover'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteDomesticKittenSitsWindow} className="d-block w-100 h-100" alt="Slide 2" style={{minHeight:'482px'}} />
+                        <img src={cuteDomesticKittenSitsWindow} className="d-block w-100 h-100" alt="Slide 2" style={{minHeight:'482px',objectFit: 'cover'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteKittenSittingOutdoorsToy} className="d-block w-100 h-100" alt="Slide 3" style={{minHeight:'482px'}} />
+                        <img src={cuteKittenSittingOutdoorsToy} className="d-block w-100 h-100" alt="Slide 3" style={{minHeight:'482px',objectFit: 'cover'}} />
                     </div>
                     <div className="carousel-item">
-                        <img src={cuteKittenSittingOutdoorsSnow} className="d-block w-100 h-100" alt="Slide 4" style={{minHeight:'482px'}} />
+                        <img src={cuteKittenSittingOutdoorsSnow} className="d-block w-100 h-100" alt="Slide 4" style={{minHeight:'482px',objectFit: 'cover'}} />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

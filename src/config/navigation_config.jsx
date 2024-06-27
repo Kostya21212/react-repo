@@ -9,6 +9,9 @@ import Todo_list from '../components/pages/Todo-list';
 import NotFound from "../components/pages/NotFound";
 import Login from '../components/pages/Login';
 import ListUsers from '../components/pages/ListUsers';
+import { Button } from 'bootstrap';
+import TodoNew from '../components/pages/TodoNew';
+import Users from '../components/pages/Users'
 export const NAV_PATHS = {
     HOME: "/",
     GOODS: "/goods",
@@ -17,7 +20,9 @@ export const NAV_PATHS = {
     SMILES: "/smiles",
     REGISTRATION: "/registration",
     LOGIN:"/login",
-    LISTUSERS:"/listUsers"
+    LISTUSERS:"/listUsers",
+    USERS:"/users",
+    TODONEW:"/todoNew"
   };
   
   export const NAV_ITEMS = [
@@ -61,6 +66,16 @@ export const NAV_PATHS = {
       path: NAV_PATHS.LOGIN,
       title: <i class="bi bi-person-circle"></i>,
       element: <Login/>,
+    },
+    {
+      path: NAV_PATHS.TODONEW,
+      title: 'TodoNew',
+      element: <TodoNew />,
+    },
+    {
+      path: NAV_PATHS.USERS,
+      title: 'Users',
+      element: <Users />,
     },
     {
       path: "*",

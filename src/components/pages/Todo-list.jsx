@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 const Todo_List = () => {
-    // Стан для зберігання списку тудушок
+   
     const [todos, setTodos] = useState([
         { id: 1, text: 'Приклад 1', completed: false },
         { id: 2, text: 'Приклад 2', completed: true },
         { id: 3, text: 'Приклад 3', completed: false }
     ]);
 
-    // Стан для зберігання id тудушки, яку ми редагуємо
+  
     const [editTodoId, setEditTodoId] = useState(null);
 
-    // Стан для зберігання тексту редагованої тудушки
+   
     const [editTodoText, setEditTodoText] = useState('');
 
-    // Функція для зміни стану тудушки (перемикає completed)
+    
     const toggleTodo = (id) => {
         const updatedTodos = todos.map(todo =>
             todo.id === id ? { ...todo, completed: !todo.completed } : todo
@@ -22,14 +22,14 @@ const Todo_List = () => {
         setTodos(updatedTodos);
     };
 
-    // Функція для редагування тексту тудушки
+   
     const editTodo = (id) => {
         const todoToEdit = todos.find(todo => todo.id === id);
         setEditTodoId(id);
         setEditTodoText(todoToEdit.text);
     };
 
-    // Функція для збереження змін редагованої тудушки
+   
     const saveEditedTodo = () => {
         const updatedTodos = todos.map(todo =>
             todo.id === editTodoId ? { ...todo, text: editTodoText } : todo
@@ -39,22 +39,21 @@ const Todo_List = () => {
         setEditTodoText('');
     };
 
-    // Функція для відміни редагування тудушки
+  
     const cancelEditTodo = () => {
         setEditTodoId(null);
         setEditTodoText('');
     };
 
-    // Функція для видалення тудушки за її id
+   
     const removeTodo = (id) => {
         const updatedTodos = todos.filter(todo => todo.id !== id);
         setTodos(updatedTodos);
     };
 
-    // Стан для зберігання значення нової тудушки
     const [newTodo, setNewTodo] = useState('');
 
-    // Функція для додавання нової тудушки
+   
     const addTodo = () => {
         if (newTodo.trim() !== '') {
             const newId = todos.length > 0 ? todos[todos.length - 1].id + 1 : 1;
@@ -124,3 +123,19 @@ const Todo_List = () => {
 };
 
 export default Todo_List;
+// import {createSlice} from "@reduxjs/toolkit"
+// export const Todo_List= createSlice({
+//     name:'todo',
+//     initialState:{
+//         data: []
+//     },
+//     reducers:{
+//         addTask(state,action){
+//             state.data.push(action.payload);
+//         }
+//     },
+// });
+
+// export const { addTask } = Todo_List.actions;
+
+// export default Todo_List.reducer

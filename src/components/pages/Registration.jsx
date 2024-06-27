@@ -10,7 +10,7 @@ const Registration = () => {
                 Реєстрація
               </div>
               <div className="card-body">
-                <form id="registrationForm">
+                <form id="registrationForm d-flex flex-column gap-3">
                   <div className="form-group">
                     <label htmlFor="username">Імя користувача</label>
                     <input type="text" className="form-control" id="username" name="username" required />

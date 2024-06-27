@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contacts = ({ contacts, onDeleteContact }) => {
   return (
-    <div className='overflow-x-auto'>
+    <div className='overflow-x-auto' style={{  borderRadius: '20px'}}>
       <table className='min-w-full bg-warning rounded-1 border border-gray-300'>
         <thead className='bg-gray-800 text-Black text-lg'>
           <tr>
