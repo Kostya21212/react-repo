@@ -31,8 +31,9 @@ th{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 130vh;
+  min-height: 330vh;
  padding-bottom: 200px;
+ box-sizing: border-box;
 }
 
 .container {

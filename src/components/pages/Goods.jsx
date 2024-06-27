@@ -95,7 +95,7 @@ const Orders = ({ onBack }) => {
   };
 
   return (
-    <div className='bg-warning container text d-flex flex-col justify-center align-middle  w-auto'>
+    <div className='bg-warning container text d-flex flex-col justify-center align-middle  w-auto' style={{borderRadius:'20px'}}>
       <h3>Мои заказы</h3>
       <button onClick={onBack} style={{ margin: '0 auto', width: '250px' }}>Назад к категориям</button>
       {orders.length === 0 ? (
@@ -104,7 +104,7 @@ const Orders = ({ onBack }) => {
         <ul className='d-flex flex-row justify-content-around list-unstyled mt-3' style={{flexWrap:'wrap'}}>
           {orders.map((order, index) => (
             <li key={index} className='bg-warning'>
-              <div onClick={() => handleOrderClick(order)} className='bg-black p-3 rounded-sm text-white mb-3'>
+              <div onClick={() => handleOrderClick(order)} className='card bg-black p-3 rounded-sm text-white mb-3'>
                 <img src={order.details.image} alt={order.details.name} style={{ height: '200px' }} className='mb-4' />
                 <p>Дата: {order.date}</p>
                 <p>Цена: ${order.price}</p>
