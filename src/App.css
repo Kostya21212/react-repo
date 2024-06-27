@@ -31,7 +31,7 @@ th{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 330vh;
+  min-height: 350vh;
  padding-bottom: 200px;
  box-sizing: border-box;
 }
@@ -106,7 +106,7 @@ th{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 330vh;
+  min-height: 350vh;
 }
 
 .logo {
