@@ -11,7 +11,7 @@ import Login from '../components/pages/Login';
 import ListUsers from '../components/pages/ListUsers';
 import { Button } from 'bootstrap';
 import TodoNew from '../components/pages/TodoNew';
-import Users from '../components/pages/Users'
+
 export const NAV_PATHS = {
     HOME: "/",
     GOODS: "/goods",
@@ -21,7 +21,6 @@ export const NAV_PATHS = {
     REGISTRATION: "/registration",
     LOGIN:"/login",
     LISTUSERS:"/listUsers",
-    USERS:"/users",
     TODONEW:"/todoNew"
   };
   
@@ -56,27 +55,25 @@ export const NAV_PATHS = {
       path: NAV_PATHS.LISTUSERS,
       title: 'Users list',
       element: <ListUsers/>,
+    }, 
+    {
+      path: NAV_PATHS.TODONEW,
+      title: 'TodoNew',
+      element: <TodoNew />,
     },  
     {
       path: NAV_PATHS.REGISTRATION,
       title: <i class="bi bi-box-arrow-right"></i>,
       element: <Registration/>,
-    },
+    }, 
+   
     {
       path: NAV_PATHS.LOGIN,
       title: <i class="bi bi-person-circle"></i>,
       element: <Login/>,
     },
-    {
-      path: NAV_PATHS.TODONEW,
-      title: 'TodoNew',
-      element: <TodoNew />,
-    },
-    {
-      path: NAV_PATHS.USERS,
-      title: 'Users',
-      element: <Users />,
-    },
+   
+
     {
       path: "*",
       isNotNav: true,
